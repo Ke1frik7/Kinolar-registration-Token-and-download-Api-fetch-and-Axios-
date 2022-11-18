@@ -1,0 +1,382 @@
+@font-face {
+  font-family: "Aria";
+  src: url("../Fonts/Arimo-Medium.ttf");
+}
+*::before, *::after, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aria";
+}
+
+body {
+  background: rgb(23, 22, 22);
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  position: fixed;
+  transition: all 0.5s ease;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px auto;
+}
+
+.nav {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.nav__title {
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.register {
+  padding-top: 8rem;
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+input {
+  display: block;
+}
+
+.register__align {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form input, form button, .card__btn, .pagination__btn button, .locals__btn {
+  margin: 1.5rem 0rem 1rem 0rem;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  border: 1px solid transparent;
+  outline: 4px solid transparent;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.locals__btn {
+  padding: 0.5rem 1rem;
+}
+
+form button {
+  background: green;
+  color: white;
+  font-size: 23px;
+  letter-spacing: 2px;
+  background: #e50914;
+}
+
+form input:focus {
+  outline: 4px solid #e50914;
+}
+
+form button:hover, .card__btn:hover, .pagination__btn button:hover, .locals__btn:hover {
+  outline: 3px solid #e50914;
+}
+
+.nav {
+  padding: 0;
+}
+
+.nav__text {
+  width: 100%;
+  height: auto;
+}
+
+.nav__text h1 {
+  padding-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.nav__text p {
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.nav__borders {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.nav__border {
+  width: 30%;
+  height: 3px;
+  background: #e50914;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+.nav__form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav__form input {
+  padding: 0.5rem 1rem;
+}
+
+.nav__text_align {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__form select {
+  transition: all 0.5s ease;
+  outline: 3px solid transparent;
+  border-radius: 10px;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.nav__text {
+  width: 73%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__select {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+
+select {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+}
+
+.parent__select {
+  font-size: 16px;
+  padding: 0.4rem;
+  outline: 3px solid transparent;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.parent__select:focus, .form__btn:hover {
+  outline: 3px solid #e50914;
+}
+
+.form__btn:hover {
+  outline: 3px solid white;
+}
+
+.nav__form select:focus {
+  outline: 3px solid #e50914;
+}
+
+.card__img_top {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.hero__cards {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
+
+.card__title, .card__text {
+  padding: 0.5rem 0rem;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+.card__title {
+  font-size: 30px;
+}
+
+.card__btn, .pagination__btn button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  background: #e50914;
+  color: white;
+  letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+.activeHeader {
+  color: rgb(23, 22, 22);
+  background: rgba(0, 0, 0, 0.725);
+  transition: 0.5s ease;
+}
+
+.activeHeader .nav__border {
+  background: rgb(23, 22, 22);
+}
+
+.form__btn {
+  padding: 0.5rem 1rem;
+  font-size: 17px;
+  outline: 3px solid transparent;
+  border: 1px solid transparent;
+  transition: all 1s ease;
+  border: 1px solid transparent;
+  outline: 4px solid transparent;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.pagination__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pagination__btn button {
+  margin: 1rem;
+}
+
+.locals {
+  padding-top: 14rem;
+}
+
+.locals__container {
+  position: fixed;
+}
+
+.locals__align {
+  background: rgba(0, 0, 0, 0.694);
+  border-radius: 10px;
+  list-style-type: none;
+  transform: translateX(-120%);
+  transition: all 0.5s ease;
+  height: 300px;
+  overflow: scroll;
+}
+
+.locals__align li {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.locals__align li img {
+  width: 150px;
+  height: 150px;
+}
+
+.locals__align li h3 {
+  font-size: 30px;
+}
+
+.locals__align img {
+  border-radius: 15px;
+}
+
+.locals__align h4 {
+  font-size: 23px;
+  padding: 1rem;
+}
+
+.active {
+  transform: translateX(0%);
+}
+
+.dowload__kino {
+  padding: 0.5rem 0.7rem;
+  font-size: 17px;
+  border-radius: 15px;
+  background: #e50914;
+  color: white;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+  outline: 4px solid transparent;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.dowload__kino:hover {
+  background: white;
+  color: black;
+}
+
+.timeOut {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  width: 250px;
+  min-height: 150px;
+  background: white;
+  color: rgb(23, 22, 22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  display: none;
+}
+
+.timeOutBlock {
+  display: flex;
+}
+
+.timeOut {
+  position: fixed;
+  top: 34%;
+  left: 37.5%;
+  width: 350px;
+  min-height: 100px;
+  background: #e50914;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100px;
+  display: none;
+}
+
+.timeOutBlock {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */

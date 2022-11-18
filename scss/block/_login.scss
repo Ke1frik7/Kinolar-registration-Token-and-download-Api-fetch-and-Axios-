@@ -1,0 +1,15 @@
+.timeOut{
+    position: fixed;
+    top: 34%;
+    left: 37.5%;
+    width: 350px;
+    min-height: 100px;
+    background: $qizil;
+    color: $oq;
+    @include center;
+    border-radius: 100px;
+    display: none;
+}
+.timeOutBlock{
+    display: flex;
+}

@@ -1,0 +1,45 @@
+.nav{
+    width: 100%;
+    text-align: center;
+    color: $oq;
+    padding: 1rem;
+}
+.nav__title{
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+.register{
+    padding-top: 8rem;
+    width: 100%;
+    min-height: 60vh;
+    @include center;    
+}
+input{
+    display: block;
+}
+.register__align{   
+    width: 100%;
+    @include center;
+}
+form input , form button, .card__btn, .pagination__btn button, .locals__btn{
+    margin: 1.5rem 0rem 1rem 0rem ;
+    padding: 1rem  1.5rem;
+    font-size: 20px;
+    @include borders;
+}
+.locals__btn{
+    padding: 0.5rem 1rem ;
+}
+form button{
+    background: $yashil;
+    color: $oq;
+    font-size: 23px;
+    letter-spacing: 2px;
+    background: $qizil;
+}
+form input:focus {
+    outline: 4px solid $qizil;
+}
+form button:hover, .card__btn:hover, .pagination__btn button:hover , .locals__btn:hover{
+    outline: 3px solid $qizil;
+}

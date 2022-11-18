@@ -1,0 +1,18 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin borders{
+    border: 1px solid transparent;
+    outline:  4px solid transparent;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+@mixin evenly{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}

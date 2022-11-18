@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="nav__text_align">
+                    <div class="nav__text">
+                        <div class="nav__titles">
+                            <h1>Biz bilan kinolar olamiga hush kelibsiz!</h1>
+                        <p>Kinolar qidiring</p>
+                        </div>
+                    </div>
+                    <div class="nav__select">
+                        <select class="parent__select">
+                            <option value="" selected disabled>O'z qiziqishlaringiz bo'yicha tanlang</option>
+                            <option value="jangari">Jangari</option>
+                            <option value="muhabbat">Hissiyotli</option>
+                            <option value="tragediya">Tragediya</option>
+                            <option value="comediya">Komediya</option>
+                            <option value="fantastika">Fantastika</option>
+                            <option value="drama">Drama</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <form class="nav__form" id="form">
+                    <input placeholder="Kinolar qidiring ..." type="text" class="input">
+                    <select  id="select__sort">
+                        <option value="all">All</option>
+                        <option value="az">AZ</option>
+                        <option value="za">ZA</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </form>
+                <button form="form" class="form__btn">Junatish</button>
+                <div class="nav__borders">
+                    <div class="nav__border"></div>
+                </div>
+            </div>    
+        </div>
+    </header>
+    <div class="timeOut">
+        <h1>Biroz kuting ...     </h1>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="locals">
+                    <div class="locals__container">
+                        <button class="locals__btn">
+                            Saqlangan kinolar
+                            </button>
+                        <ul class="locals__align">
+                            <li><h3>Saqlangan kinolar</h3></li>
+                            <li><button class="dowload__kino">Kinoni orginal tarzda yuklash</button></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="hero__cards">
+                    <template id="card_template">
+                        <div class="card">
+                            <img src="" alt="" class="card__img_top">
+                       
+                        <h3 class="card__title">
+                            Name
+                        </h3>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, illo.
+                        </p>
+                        <button class="card__btn">Saqlash</button>
+                    </div>
+                    </template>
+                </div>
+            </div>
+            <div class="pagination__btn">
+                <button class="right">Keyingi page</button>
+                <button class="left">Oldingi page</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./Javascript/axios.js"></script>
+    <script src="./Javascript/utils.js"></script>
+    <script src="./Javascript/movies.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+*::before, *::after,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Aria";
+}
+body{
+    background: $defaulrColor;
+}
+header{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+footer{
+    width: 100%;
+    height: auto;
+}
